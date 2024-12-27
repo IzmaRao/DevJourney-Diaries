@@ -24,7 +24,7 @@ export default function Blog() {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/api/blog/`, { cache: 'no-cache'})
+                const response = await fetch(`https://dev-journey-diaries.vercel.app/api/blog/`, { cache: 'no-cache'})
                 if (!response.ok) {
                     throw new Error("Failed to fetch product data")
                 }
